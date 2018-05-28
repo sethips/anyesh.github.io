@@ -1,0 +1,866 @@
+/*--------------
+All devices
+----------------*/
+
+body {
+	background-color: rgba(220, 220, 240, 0.2);
+	letter-spacing: 1.5px;
+}
+
+.thumbnail-interest {
+	z-index : -1;
+	border: 1px solid #ddd;
+	margin: 5px auto;
+	padding: 3px;
+	background-color: white;
+}
+
+h1 {
+	color: rgb(31, 133, 255);
+	font-size: 72px;
+	margin: 50 auto;
+	display: block;
+}
+
+h2 {
+	color: rgb(49, 49, 49);
+	font-size: 48px;
+	margin: 50 auto;
+	display: block;
+	letter-spacing: 1.5px;
+}
+
+hr {
+	border: 0;
+	width: 96%;
+	height: 2px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	background-color: rgba(250, 250, 255, 1);
+	border-color: rgba(220, 220, 240, 1);
+}
+
+i:hover {
+	animation: iconSpin 4s infinite;
+	animation-timing-function: cubic-bezier(0, 0.6, 0.7, 1.0);
+}
+
+button:hover {
+	animation: buttonWobble 2s infinite;
+	animation-timing-function: cubic-bezier(0, 0.3, 0.7, 1.0);
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#brand {
+	padding-left: 10px;
+	margin-top: 15px;
+	letter-spacing: 1.5px;
+}
+
+.audio-div {
+	margin-bottom: 50px;
+}
+
+.particle-summary {
+	z-index: 1;
+	position: absolute;
+	padding: 10px;
+	left: 50px;
+	top: 100px;
+	width: 300px;
+	color: white;
+	background-color: rgba(0, 0, 0, 1);
+	box-shadow: 0 0 1em rgba(0,0,0,1);
+}
+
+.particleDemos {
+
+}
+
+/*--------------
+Smartphones
+----------------*/
+@media only screen and (max-width : 520px) {
+	/*--------------
+	General Styling
+	----------------*/
+	.mobile-only {
+		display: block;
+	}
+
+
+
+	#terminal {
+		margin: 0 10px 0 10px;
+	}
+
+	h4 {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.section-strip {
+		width: 100%;
+		z-index : -1;
+		padding: 100px 5px 0px 5px;
+		font-size: 30px;
+		font-weight: 300;
+		font-family: 'Nunito Sans', sans-serif;
+		transition: all 0.4s ease;
+		margin-bottom: 35px;
+		/*height: 550px;*/
+	}
+
+	.image-text {
+		text-align: center;
+		margin: 2 auto;
+		width: 100%;
+		transition: opacity 0.2s ease;
+	}
+
+	.flex-box {
+		display: flex;
+		flex-direction: row;
+		/*flex-wrap: wrap;*/
+		/*justify-content: flex-start;*/
+	}
+
+	.flex-box > div {
+		flex: 1 1 auto;
+	}
+
+	#canvas-background {
+		z-index: -2;
+		position: fixed;
+	}
+
+	/*--------------
+	Strips
+	----------------*/
+
+	.initially-hidden {
+		display: none;
+		opacity: 0;
+	}
+
+	/*--------------
+	Nav Bar
+	----------------*/
+
+
+	nav {
+		z-index: 3;
+	}
+
+	.nav {
+		float: right;
+		margin-bottom: 0;
+		border: none;
+		border-radius: 0;
+	}
+
+	/*--------------
+	Progress Bar
+	----------------*/
+
+	#progress-bar {
+		margin: 50px auto 20px auto;
+		flex-direction: row;
+		border-radius: 5px;
+		width: 300px;
+		padding: 8px 2px 8px 2px;
+		box-shadow: 0 0 1em rgba(0,0,0,0.6);
+	}
+
+	#progress-bar i {
+		cursor: pointer;
+		text-align: center;
+		color: rgba(49, 49, 49, 0.5);
+		transition: 0.2s;
+		margin: 5px 12px;
+		font-size: 32px;
+	}
+
+	#progress-bar #header-icon {
+		color: rgba(49, 49, 49, 1);
+	}
+
+
+	/*--------------
+	Header Strip
+	----------------*/
+
+	.btn-lg {
+		color: rgb(255, 255, 255);
+	}
+
+	#profile-photo {
+		width: 200px;
+		height: 200px;
+		box-shadow: 0 0 1em rgba(0,0,0,0.6);
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#title-text {
+		display: none;
+		vertical-align: text-bottom;
+	}
+
+	#title-div {
+		display: none;
+	}
+
+	#resume-download {
+		background-color: rgb(31, 133, 255);
+		color: rgb(255, 255, 255);
+		display: block;
+		margin: 20 auto 0 auto;
+	}
+
+	/*--------------
+	Music Strip
+	----------------*/
+
+	.page-summary {
+		display: block;
+		font-size: 17px;
+		text-align: center;
+	}
+
+	audio {
+		width: 95%;
+		max-width: 300px;
+	}
+
+	.audio-div {
+		text-align: center;
+	}
+
+	.audio-div:first-of-type {
+		margin-top: 50px;
+	}
+
+	.audio-div h4 {
+		display: none;
+	}
+
+	#audio-flex-box hr {
+		margin: 5px auto 15px auto;
+	}
+
+	/*--------------
+	Skills Strip
+	----------------*/
+
+	.thumbnail-skill {
+		z-index : -1;
+		height: 70px;
+		width: 70px;
+		border: 1px solid #ddd;
+		margin: 5px 0px;
+		padding: 3px;
+		background-color: white;
+	}
+
+	#skills-column {
+		min-height: 150px;
+		margin-bottom: 50px;
+	}
+
+	.thumbnail-div {
+		width: 100%;
+		height: 150px;
+	}
+
+	/*--------------
+	Project Strip
+	----------------*/
+
+	.project-div:hover .image-text {
+		opacity: 1;
+	}
+
+	.thumbnail-link {
+		display: block;
+		z-index : -1;
+		height: 150px;
+		width: 150px;
+		border: 1px solid #999;
+		margin: 5px auto 20px auto;
+		border-radius: 50%;
+		padding: 3px;
+		background-color: white;
+	}
+
+	.thumbnail-link:hover {
+		animation: iconSpin 4s infinite;
+		animation-timing-function: cubic-bezier(0, 0.6, 0.7, 1.0);
+	}
+
+	.thumbnail-link-parent {
+		margin: 0 auto;
+	}
+
+	#coding-div {
+		display: flex;
+		flex-direction: column;
+		margin-right: 50px;
+	}
+
+	.thumbnail-interest {
+		height: 100px;
+		width: 100px;
+	}
+
+	#interests-column {
+		min-height: 200px;
+	}
+}
+
+/*--------------
+Tablets
+----------------*/
+@media only screen and (min-width : 521px) and (max-width : 768px) {
+	/*--------------
+	Strips
+	----------------*/
+	.mobile-only {
+		display: none;
+	}
+
+	#header-strip {
+		padding-top: 150px;
+		display: block;
+	}
+
+	.initially-hidden {
+		display: none;
+		opacity: 0;
+	}
+
+	#terminal {
+		margin: 0 100px 0 100px;
+	}
+
+	/*--------------
+	Nav Bar
+	----------------*/
+
+	nav {
+		z-index: 3;
+	}
+
+	.nav {
+		float: right;
+		margin-bottom: 0;
+		border: none;
+		border-radius: 0;
+	}
+
+	/*--------------
+	Progress Bar
+	----------------*/
+
+	#progress-bar {
+		margin: 150px auto 20px auto;
+		flex-direction: row;
+		border-radius: 5px;
+		width: 300px;
+		padding: 8px 2px 8px 2px;
+		box-shadow: 0 0 1em rgba(0,0,0,0.6);
+	}
+
+	#progress-bar i {
+		cursor: pointer;
+		text-align: center;
+		color: rgba(49, 49, 49, 0.5);
+		transition: 0.2s;
+		margin: 5px 12px;
+		font-size: 32px;
+	}
+
+	#progress-bar #header-icon {
+		color: rgba(49, 49, 49, 1);
+	}
+
+	/*--------------
+	General Styling
+	----------------*/
+
+	.section-strip {
+		width: 100%;
+		z-index : -1;
+		padding: 100px 20px 0px 20px;
+		font-size: 30px;
+		font-weight: 300;
+		font-family: 'Nunito Sans', sans-serif;	height: 800px;
+		transition: all 0.4s ease;
+	}
+
+	.page-summary {
+		display: inline-block;
+		z-index: -1;
+		font-size: 24px;
+		margin-bottom: 50px;
+	}
+
+	.thumbnail-div {
+		z-index: -1;
+		display: block;
+		width: 100%;
+	}
+
+	.image-text {
+		text-align: center;
+		height: 50px;
+		margin: 2px auto;
+		width: 100%;
+	}
+	.flex-box {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.flex-box > div {
+		flex: 1 1 auto;
+	}
+
+	#canvas-background {
+		z-index: -2;
+		position: fixed;
+	}
+
+	/*--------------
+	Header Strip
+	----------------*/
+
+	.btn-lg {
+		color: rgb(255, 255, 255);
+	}
+
+	.header-boxes {
+		height: 300px;
+		margin: 0px 2px;
+	}
+
+
+	#profile-photo-div {
+		margin-right: 50px;
+	}
+
+	#profile-photo {
+		width: 300px;
+		height: 300px;
+		box-shadow: 0 0 1em rgba(0,0,0,0.6);
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#header-flex-box {
+		margin-bottom: 50px;
+	}
+
+	#title-text {
+		vertical-align: text-bottom;
+	}
+
+	#title-div {
+		vertical-align: middle;
+		padding-top: 50px;
+	}
+
+	#resume-download {
+		background-color: rgb(31, 133, 255);
+		color: rgb(255, 255, 255);
+		display: block;
+		margin: 20 auto 0 auto;
+	}
+
+	/*--------------
+	Music Strip
+	----------------*/
+
+	.mobile-hr {
+		display: none;
+	}
+
+	/*--------------
+	projects Strip
+	----------------*/
+
+	.thumbnail-skill {
+		z-index : -1;
+		height: 150px;
+		width: 150px;
+		border: 1px solid #ddd;
+		margin: 5px;
+		padding: 3px;
+		background-color: white;
+	}
+
+	#projects-div {
+		margin-right: 50px;
+	}
+
+	/*--------------
+	Project Strip
+	----------------*/
+
+	.project-div {
+		padding: 0;
+	}
+
+	.thumbnail-link {
+		display: block;
+		z-index : -1;
+		height: 140px;
+		width: 140px;
+		border: 1px solid #999;
+		margin: 5px auto 30px auto;
+		border-radius: 50%;
+		padding: 3px;
+		background-color: white;
+	}
+
+	.thumbnail-interest {
+		height: 150px;
+		width: 150px;
+	}
+
+	.thumbnail-link:hover {
+		animation: iconSpin 4s infinite;
+		animation-timing-function: cubic-bezier(0, 0.6, 0.7, 1.0);
+	}
+
+	.thumbnail-link-parent {
+		margin: 0 auto;
+	}
+
+	#coding-div {
+		display: flex;
+		flex-direction: column;
+		margin-right: 50px;
+	}
+}
+
+/*--------------
+Laptops
+----------------*/
+@media only screen  and (min-width : 769px) {
+	/*--------------
+	Strips
+	----------------*/
+	.mobile-only {
+		display: none;
+	}
+
+	#header-strip {
+		padding-top: 150px;
+		display: block;
+	}
+
+	#terminal {
+		margin: 0 100px 0 100px;
+	}
+
+	.initially-hidden {
+		display: none;
+		opacity: 0;
+	}
+
+	/*--------------
+	Nav Bar
+	----------------*/
+
+	nav {
+		z-index: 3;
+	}
+
+	.nav {
+		float: right;
+		margin-bottom: 0;
+		border: none;
+		border-radius: 0;
+	}
+
+	/*--------------
+	Progress Bar
+	----------------*/
+
+	#progress-bar {
+		margin: 50px 50px 20px auto;
+		z-index: 0;
+		flex-direction: row;
+		border-radius: 5px;
+		width: 340px;
+		padding: 8px 2px 8px 2px;
+		box-shadow: 0 0 1em rgba(0,0,0,0.6);
+	}
+
+	#progress-bar i {
+		cursor: pointer;
+		text-align: center;
+		color: rgba(49, 49, 49, 0.5);
+		padding: 4px 2px 4px 2px;
+		transition: 0.2s;
+		margin: 5px 10px;
+	}
+
+	#progress-bar #header-icon {
+		color: rgba(49, 49, 49, 1);
+	}
+
+	/*--------------
+	General Styling
+	----------------*/
+
+	.mobile-hr {
+		display: none;
+	}
+
+	.section-strip {
+		width: 100%;
+		z-index : -1;
+		padding: 100px 20px 0px 20px;
+		font-size: 30px;
+		font-weight: 300;
+		font-family: 'Nunito Sans', sans-serif;
+		min-height: 500px;
+		transition: all 0.4s ease;
+	}
+
+	.page-summary {
+		padding: 20px;
+		margin: 0 auto 20px auto;
+		width: 900px;
+		display: block;
+		z-index: -1;
+		font-size: 16px;
+	}
+
+	.skills-list {
+		padding: 20px;
+		margin: 0 auto 20px auto;
+		width: 600;
+		display: block;
+		z-index: -1;
+		font-size: 16px;
+	}
+
+	.image-text {
+		text-align: center;
+		opacity: 0;
+		margin: 2 auto;
+		width: 100%;
+		transition: opacity 0.2s ease;
+	}
+
+	.thumbnail-link-div {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.flex-box {
+		display: flex;
+		flex-direction: row;
+		/*flex-wrap: wrap;*/
+		/*justify-content: flex-start;*/
+	}
+
+	.flex-box > div {
+		flex: 1 1 auto;
+	}
+
+	#canvas-background {
+		z-index: -2;
+		position: fixed;
+	}
+
+	/*--------------
+	Header Strip
+	----------------*/
+
+	.btn-lg {
+		color: rgb(255, 255, 255);
+	}
+
+	.header-boxes {
+		height: 300px;
+		margin: 0px 2px;
+	}
+
+	#profile-photo-div {
+		margin-right: 50px;
+	}
+
+	#profile-photo {
+		width: 300px;
+		height: 300px;
+		box-shadow: 0 0 1em rgba(0,0,0,0.6);
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#header-flex-box {
+		padding-left: 35px;
+		margin-bottom: 50px;
+	}
+
+	#title-text {
+		vertical-align: text-bottom;
+	}
+
+	#title-div {
+		vertical-align: middle;
+		padding-top: 50px;
+	}
+
+	#resume-download {
+		background-color: rgb(31, 133, 255);
+		color: rgb(255, 255, 255);
+		display: block;
+		margin: 20 auto 0 auto;
+	}
+
+	/*--------------
+	Music Strip
+	----------------*/
+
+	/*--------------
+	projects Strip
+	----------------*/
+
+	.thumbnail-skill {
+		z-index : -1;
+		height: 100px;
+		width: 100px;
+		border: 1px solid #ddd;
+		margin: 5px;
+		padding: 3px;
+		background-color: white;
+	}
+
+	.thumbnail-div {
+		display: block;
+		width: 700px;
+		margin: 0 auto;
+	}
+
+	#projects-div {
+		margin-right: 50px;
+	}
+
+	/*--------------
+	Project Strip
+	----------------*/
+	.project-div:hover .image-text {
+		opacity: 1;
+	}
+
+	.thumbnail-link {
+		display: inline-block;
+		z-index : -1;
+		height: 200px;
+		width: 200px;
+		border: 1px solid #999;
+		margin: 5px auto;
+		border-radius: 50%;
+		padding: 3px;
+		background-color: white;
+	}
+
+	#projects-column {
+		padding: 0 50px;
+	}
+
+	.thumbnail-link:hover {
+		animation: iconSpin 4s infinite;
+		animation-timing-function: cubic-bezier(0, 0.6, 0.7, 1.0);
+	}
+
+	.thumbnail-link-parent {
+		display: inline-block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#coding-div {
+		display: flex;
+		flex-direction: column;
+		margin-right: 50px;
+	}
+}
+
+audio {
+	background-color: rgb(248, 248, 248);
+	box-shadow: 0 0 1em rgba(0, 100, 200, 0.7);
+}
+
+
+
+@keyframes iconSpin {
+  0%   { transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg);			}
+  30%  { transform: rotate(-720deg); -webkit-transform: rotate(-720deg); -ms-transform: rotate(-720deg);	}
+  50%  { transform: rotate(-720deg); -webkit-transform: rotate(-720deg); -ms-transform: rotate(-720deg);	}
+  80%   { transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg);		}
+}
+
+@keyframes buttonWobble {
+  0%   { transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg);			}
+  10%  { transform: rotate(-7deg); -webkit-transform: rotate(-7deg); -ms-transform: rotate(-7deg);		}
+  20%  { transform: rotate(7deg); -webkit-transform: rotate(7deg); -ms-transform: rotate(7deg);			}
+  30%   { transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg);		}
+  80%   { transform: rotate(0deg); -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg);		}
+}
+
+@media only screen  and (min-width : 769px) and (max-width : 900px){
+	.thumbnail-interest {
+		height: 150px;
+		width: 150px;
+	}
+}
+
+/*Desktop: only small*/
+@media only screen  and (min-width : 900px) and (max-width : 1100px){
+	.thumbnail-interest {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+/*Desktop: only large*/
+@media only screen  and (min-width : 1101px) {
+	.thumbnail-interest {
+		height: 150px;
+		width: 150px;
+	}
+}
+
+.audio-div {
+	display: block;
+}
+
+.audio-element {
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.hr {
+	margin: 40px auto;
+	width: 60%;
+}
