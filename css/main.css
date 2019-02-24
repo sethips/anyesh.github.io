@@ -183,6 +183,9 @@ header {
   .text-secondary.name {
     font-size: 60px;
   }
+  .bio p {
+    font-size: 20px;
+  }
 }
 .descriptions {
   background-color: dimgrey;
@@ -225,20 +228,20 @@ main#home h1 {
   border-radius: 50%;
   border: #ec5858 3px solid;
 }
-.about-info .bio {
+.bio {
   grid-area: bio;
   font-size: 1.5rem;
 }
-.about-info .job-1 {
+.job-1 {
   grid-area: job1;
 }
-.about-info .job-2 {
+.job-2 {
   grid-area: job2;
 }
-.about-info .job-3 {
+.job-3 {
   grid-area: job3;
 }
-.about-info .job {
+.job {
   background: #515151;
   padding: 0.5rem;
   border-bottom: #ec5858 5px solid;
