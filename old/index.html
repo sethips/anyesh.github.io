@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>Anish Shrestha</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/0.11.23/css/jquery.terminal.min.css" rel="stylesheet"/>
+    <!-- <link rel="icon" href="img/me.png"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:none;
+}
+</style>
+</head>
+<body>
+	<div id="particles-js"></div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p id="brand">Anish Shrestha: hacker, developer, musician</p>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/anyesh" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:sthacruz@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a></li>
+                    <li><a href="https://np.linkedin.com/in/anish-shrestha-482717165" target="_blank"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a></li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+<!-- <div id="canvas-background"></div>
+ -->
+<div class="section-strip" id="header-strip">
+    <div class="flex-box" id="header-flex-box">
+        <div class="header-boxes" id="profile-photo-div">
+            <img id="profile-photo" src="img/profilee.jpg" alt="MyPicture">
+            <a href="/Anish_Shrestha.pdf" download="Anish_Shrestha.pdf"><button id="resume-download" download="Anish_Shrestha.pdf" class="btn btn-lg">Download Resume</button></a>
+        </div>
+        <div class="header-boxes" id="title-div">
+            <h2 id="title-text" style="text-align: center">Anish Shrestha: Software Engineer</h2>
+            <hr>
+
+            <h4 style="text-align:center"><strong>email:</strong> sthacruz@gmail.com</h4>
+        </div>
+    </div>
+</div>
+
+
+<div class="section-strip initially-hidden" id="interests-strip">
+	<h3>My Other Hobbies</h3>
+    <p class="page-summary">
+        <ul>
+            <li>Music</li>
+            <li>Photography</li>
+            <li>Travelling</li>
+        </ul>
+    </p>
+    <ul>
+
+    </ul>
+</div>
+
+<div class="section-strip initially-hidden" id="projects-strip">
+	<h3>My Projects</h3>
+    <p class="page-summary">These are some of my current machine learning projects.</p>
+    <div id="projects-column" class="col-xs-12">
+        <div class="project-div col-xs-12 col-sm-4 col-md-3">
+            <h5 class="image-text">Neural Network On T-Rex</h5>
+            <a class="thumbnail-link-parent col-xs-12" href="#" target="_blank"><img class="thumbnail-link" src="img/projects/trex.jpg"></a>
+        </div>
+
+    </div>
+</div>
+
+<!-- <div class="section-strip initially-hidden" id="coding-strip">
+    <p class="page-summary">
+        Currently i am pursuing my BSCIT course at (APU Affiliated) LBEFCampus.
+        <br>
+        <br>
+        For the past few months, I've been independently studying.
+        <br>
+        <br>
+        <strong id="SkillsBot-intro">Use the SkillsBot below to see what I learned and what I'm studying now!</strong>
+    </p>
+
+    <div id="terminal"></div>
+</div> -->
+
+<div class="flex-box" id="progress-bar" style="width: 220px">
+  <i class="fa fa-3x fa-user-circle progress-bar-top" id="header-icon" aria-hidden="true"></i>
+    <!-- <i class="fa fa-3x fa-graduation-cap progress-bar-middle" id="music-icon"  aria-hidden="true"></i> -->
+    <!-- <i class="fa fa-3x fa-code-fork progress-bar-bottom" id="coding-icon" aria-hidden="true"></i> -->
+    <i class="fa fa-3x fa-code progress-bar-bottom" id="projects-icon" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-smile-o progress-bar-bottom" id="interests-icon" aria-hidden="true"></i>
+</div>
+
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<!-- <script src="js/forest.js"></script> -->
+<script src="js/p5.js"></script>
+<script src="js/dom.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="../js/jquery.terminal-0.11.23.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/terminal.js"></script>
+<script src="js/terminal2.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
+
