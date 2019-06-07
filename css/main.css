@@ -223,7 +223,7 @@ main#home h1 {
 .about-info .bio-image {
   grid-area: bioimage;
   margin: auto;
-  width: 250px;
+  width: 240px;
 
   border-radius: 50%;
   border: #ec5858 3px solid;
