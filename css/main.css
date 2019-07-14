@@ -381,3 +381,14 @@ main#home h1 {
     grid-template-columns: 1fr;
   }
 }
+
+.projects .item .descriptions {
+  height: 340px !important;
+}
+
+.projects .item .descriptions-short {
+  background-color: dimgrey;
+  padding: 10px;
+  text-align: justify !important;
+  height: 85px !important;
+}
