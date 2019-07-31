@@ -226,7 +226,7 @@ main#home h1 {
   width: 240px;
 
   border-radius: 50%;
-  border: #ec5858 3px solid;
+  /*border: #ec5858 3px solid;*/
 }
 .bio {
   grid-area: bio;
